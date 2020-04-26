@@ -1,0 +1,1 @@
+# resource-minification-maven-plugin
