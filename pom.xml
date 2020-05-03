@@ -6,7 +6,7 @@
 
     <groupId>com.github.marchenkoprojects</groupId>
     <artifactId>resource-minification-maven-plugin</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>maven-plugin</packaging>
 
     <name>Resource Minification Maven Plugin</name>
@@ -21,6 +21,8 @@
     <developers>
         <developer>
             <id>omarchenko</id>
+            <name>Oleg Marchenko</name>
+            <email>omarchenko.150@gmail.com</email>
             <roles>
                 <role>architect</role>
                 <role>developer</role>
