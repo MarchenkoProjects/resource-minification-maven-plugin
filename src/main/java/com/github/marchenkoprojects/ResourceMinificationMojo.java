@@ -43,6 +43,9 @@ public class ResourceMinificationMojo extends AbstractMojo {
     @Parameter
     private Set<String> excludeResources;
 
+    @Parameter
+    private Map<String, String> customMappingResources;
+
     private final Map<String, String> resourceToMinifiedResourceRegistry = new HashMap<>();
 
     @Override
@@ -69,6 +72,10 @@ public class ResourceMinificationMojo extends AbstractMojo {
                     minifyJsResource(resource);
                     break;
             }
+        }
+
+        if (!customMappingResources.isEmpty()) {
+            resourceToMinifiedResourceRegistry.putAll(customMappingResources);
         }
 
         for (File htmlResource: htmlResources) {
